@@ -1,32 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liz Koempel</title>
-    <meta name="author" content="Liz Koempel" />
-    <meta
-      name="description"
-      content="This is the portfolio site for Liz Koempel."
-    />
-    <meta property="og:image" content="Assets/page_prev_img.jpg" />
-    <meta
-      property="og:description"
-      content="This is Liz Koempel's portfoilo website. It has some pretty cool stuff on it."
-    />
-    <meta property="og:title" content="Liz Koempel" />
+    <meta name="author" content="Liz Koempel">
+    <meta name="description" content="This is the portfolio site for Liz Koempel.">
+    <meta property="og:image" content="Assets/page_prev_img.jpg">
+    <meta property="og:description" content="This is Liz Koempel's portfoilo website. It has some pretty cool stuff on it.">
+    <meta property="og:title" content="Liz Koempel">
   </head>
   <body>
     <h1>Contact Me</h1>
     <header>
-      <a href="">logo placeholder</a>
+      <a href="/index.html"><img src="Assets/logo.png" alt="Liz Koempel Logo"></a>
        
       <nav>
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/contact.html" aria-current="page">Contact</a></li>
         </ul>
         
       </nav>
@@ -37,25 +31,22 @@
     <form method="get">
   <label>
     Name:
-    <input name="submitted-name" autocomplete="name" required/>
+    <input name="submitted-name" autocomplete="name" required>
   </label>
   <label>
     Email:
-    <input name="submitted-email" type="email" autocomplete="email" required/>
+    <input name="submitted-email" type="email" autocomplete="email" required>
   </label>
   <label>
     Message:
     <textarea id="message" name="message" rows="10" cols="50" placeholder="Type your message here..." required></textarea>
   </label>
-  <button>Save</button>
+  <button onclick="alert('Form submitted!')">Send</button>
 </form>
-    <img
-      src="Assets/mamagnolia_acresunderconstruction.gif"
-      alt="Under construction gif"
-    />
+    <img src="Assets/mamagnolia_acresunderconstruction.gif" alt="Under construction gif">
   </main>
   <footer>
-    <p>&copy; 2026 Liz Koempel. All rights reserved.</p>
+    <p><small>&copy; 2026 Liz Koempel. All rights reserved.</small></p>
   </footer>
   </body>
 </html>
