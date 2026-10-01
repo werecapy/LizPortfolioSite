@@ -1,11 +1,13 @@
 # Index
-
+## Intro
 
 
 
 # About
+## About me
+I am an Information Science major at Michigan State University with an extensive humanities background. Thankfully my passion for working with my hands has translated to the digital world. In the physical realm, I like to create various forms on the potter's wheel and design knitting or crochet patterns. Digitally, I have learned python, HTML, CAD, and Adobe Suite.
 
-
+Being a designer in the real world has allowed me to learn a certain type of developmental thinking that combines aesthetic and functionalilty in whatever project I apply myself to. This mindset has greatly improved my work physically and digitally. 
 # projects
 
 ## Women's Studies History Collective
@@ -23,4 +25,4 @@ This was the main project of my second Digital Humanities course. It was a group
 
 
 # contact
-
+Leave a message at the beep!
