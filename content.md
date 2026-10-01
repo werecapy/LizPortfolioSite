@@ -1,10 +1,10 @@
 # Index
-
+## Intro
 
 
 
 # About
-
+## About me
 
 # projects
 
@@ -23,4 +23,4 @@ This was the main project of my second Digital Humanities course. It was a group
 
 
 # contact
-
+Leave a message at the beep!
