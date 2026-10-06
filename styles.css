@@ -31,13 +31,13 @@ a:hover {
 .img {
   max-width: 50%;
   height: auto;
-  align-content: center;
 }
 
 .figure {
 
   margin: 1rem 0;
   padding: 0;
+  align-content: center;
 }
 
 .figure-caption {
