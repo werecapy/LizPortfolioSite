@@ -2,7 +2,7 @@
   --primary-color: #0E4749;
   --secondary-color: #002626;
   --background-color: #C4A29E;
-  --hilight-color: #f40076;
+  --highlight-color: #f40076;
   --figure-caption-color: #0e4749;
 }
 
@@ -24,6 +24,10 @@ p {
   line-height: 1.6;
 }
 
+a:hover {
+  color: var(--highlight-color);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -34,8 +38,6 @@ img {
 
   margin: 1rem 0;
   padding: 0;
-  align-content: center;
-
 }
 
 .figure-caption {
