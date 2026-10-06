@@ -29,7 +29,7 @@ img {
   height: auto;
 }
 
-figure {
+.figure {
 
   margin: 1rem 0;
   padding: 0;
@@ -37,7 +37,7 @@ figure {
 
 }
 
-figcaption {
+.figure-caption {
   color: var(--figure-caption-color);
   font-size: 1.125rem;
   font-style: italic;
