@@ -34,7 +34,6 @@ a:hover {
 }
 
 .figure {
-
   margin: 1rem 0;
   padding: 0;
   align-content: center;
@@ -44,5 +43,4 @@ a:hover {
   color: var(--figure-caption-color);
   font-size: 1.125rem;
   font-style: italic;
-  text-align: center;
 }
