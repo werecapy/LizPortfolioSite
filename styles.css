@@ -5,6 +5,12 @@
   --highlight-color: #f40076;
   --figure-caption-color: #0e4749;
 }
+body {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+}
 
 .h1 {
   color: var(--primary-color);
