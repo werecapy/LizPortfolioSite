@@ -36,3 +36,10 @@ figure {
   align-content: center;
 
 }
+
+figure caption {
+  color: var(--figure-caption-color);
+  font-size: 1.125rem;
+  font-style: italic;
+  text-align: center;
+}
