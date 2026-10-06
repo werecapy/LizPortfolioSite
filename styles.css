@@ -1,6 +1,9 @@
 :root {
   --primary-color: #0E4749;
   --secondary-color: #002626;
+  --background-color: #C4A29E;
+  --hilight-color: #f40076;
+  --figure-caption-color: #0e4749;
 }
 
 h1 {
