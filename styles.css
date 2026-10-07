@@ -34,18 +34,22 @@ a:hover {
   color: var(--highlight-color);
 }
 
-.img {
-  max-width: 50%;
-  height: auto;
+img {
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.logo {
+  max-width: 10%;
+  max-height: 10%;
 }
 
 .figure {
   margin: 1rem 0;
   padding: 0;
-  align-content: center;
 }
 
-.figure-caption {
+figcaption {
   color: var(--figure-caption-color);
   font-size: 1.125rem;
   font-style: italic;
