@@ -118,7 +118,7 @@ figcaption {
   max-width: 20%;
   align-content: center;
   font-family: var(--gudea-regular);
-  text-indent: -3rem;
+  text-indent: 3rem;
 }
 
 footer p {
