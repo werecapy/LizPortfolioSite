@@ -153,6 +153,7 @@ img.figure-img:hover {
 
 img.figure-img:focus {
   transform: scale(2) translate(25%, 25%);
+  filter: none;
 }
 
 img.logo {
