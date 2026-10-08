@@ -49,6 +49,12 @@ nav {
   background-color: var(--new-color);
   padding: 1rem;
 }
+
+#list.nav-list:hover {
+  background-color: var(--highlight-color);
+  font-size: 1.25rem;
+}
+
 #list.nav-list{
   list-style: none;
 }
@@ -84,6 +90,7 @@ p {
 
 a:hover {
   color: var(--highlight-color);
+  text-decoration-skip-ink: auto;
 }
 
 img {
@@ -111,6 +118,7 @@ figcaption {
   max-width: 20%;
   align-content: center;
   font-family: var(--gudea-regular);
+  text-indent: -3rem;
 }
 
 footer p {
@@ -125,7 +133,7 @@ footer p {
 }
 
 ul.project-list {
-  list-style: none;
+  list-style-type: "🩷";
   padding: 0;
   font-family: var(--mogra-font);
 }
@@ -133,4 +141,27 @@ ul.project-list {
 button:hover {
   background-color: var(--highlight-color);
   color: var(--background-color);
+}
+
+img.figure-img {
+  cursor: zoom-in;
+}
+
+img.logo {
+  max-width: 10%;
+  max-height: 10%;
+  align-content: center;
+  background-color: none;
+}
+
+contact-form  {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--gudea-regular);
+}
+
+message.message {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--gudea-regular);
 }
