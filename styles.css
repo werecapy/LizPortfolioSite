@@ -129,3 +129,8 @@ ul.project-list {
   padding: 0;
   font-family: var(--mogra-font);
 }
+
+button:hover {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+}
