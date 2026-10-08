@@ -49,7 +49,7 @@ nav {
   background-color: var(--new-color);
   padding: 1rem;
 }
-ul {
+#list.nav-list{
   list-style: none;
 }
 
