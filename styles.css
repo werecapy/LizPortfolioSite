@@ -147,6 +147,14 @@ img.figure-img {
   cursor: zoom-in;
 }
 
+img.figure-img:hover {
+  filter: grayscale(58%);
+}
+
+img.figure-img:focus {
+  transform: scale(2) translate(25%, 25%);
+}
+
 img.logo {
   max-width: 10%;
   max-height: 10%;
