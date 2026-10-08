@@ -50,7 +50,7 @@ nav {
   padding: 1rem;
 }
 
-#list.nav-list:hover {
+#page:hover {
   background-color: var(--highlight-color);
   font-size: 1.25rem;
 }
