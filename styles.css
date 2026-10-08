@@ -5,7 +5,33 @@
   --highlight-color: #f40076;
   --new-color: #EBA6A9;
   --figure-caption-color: #0e4749;
+  --mogra-font: "Mogra", system-ui;
+  --gudea-regular: "Gudea", sans-serif;
 }
+.mogra-regular {
+  font-family: "Mogra", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gudea-regular {
+  font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gudea-bold {
+  font-family: "Gudea", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gudea-regular-italic {
+  font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--secondary-color);
@@ -15,6 +41,7 @@ body {
 header {
   background-color: var(--new-color);
   padding: 1rem;
+  font-family: var(--mogra-font);
   
 }
 
@@ -30,12 +57,21 @@ h1 {
   color: var(--primary-color);
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  font-family: var(--mogra-font);
 }
 
 h2 {
   color: var(--primary-color);
   font-size: 2rem;
   margin-bottom: 1rem; 
+  font-family: var(--mogra-font);
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--mogra-font);
 }
 
 p {
@@ -43,6 +79,7 @@ p {
   font-size: 1.25rem;
   line-height: 1.6;
   max-width: 50%;
+  font-family: var(--gudea-regular);
 }
 
 a:hover {
@@ -52,6 +89,7 @@ a:hover {
 img {
   max-width: 20%;
   max-height: 20%;
+  align-content: center;
 }
 
 .logo {
@@ -71,4 +109,23 @@ figcaption {
   font-size: 1.125rem;
   font-style: italic;
   max-width: 20%;
+  align-content: center;
+  font-family: var(--gudea-regular);
+}
+
+footer p {
+  font-size: .875rem;
+  font-family: var(--gudea-regular);
+}
+
+#contact-form {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--gudea-regular);
+}
+
+ul.project-list {
+  list-style: none;
+  padding: 0;
+  font-family: var(--mogra-font);
 }
