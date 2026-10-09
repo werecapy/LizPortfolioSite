@@ -9,46 +9,54 @@
     <meta property="og:image" content="Assets/page_prev_img.jpg">
     <meta property="og:description" content="This is Liz Koempel's portfoilo website. It has some pretty cool stuff on it.">
     <meta property="og:title" content="Liz Koempel">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Mogra&display=swap" rel="stylesheet">
   </head>
   <body>
-   <h1>About Me</h1>
+   
     <header>
-      <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo"></a>
+      <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo" class="logo"></a>
       <nav>
-        <a href="/index.html">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/projects.html">Projects</a>
-        <a href="/contact.html" aria-current="page">Contact</a>
-      </nav>
+        <ul id="list" class="nav-list">
+          <li id="page"><a class="nav-link" href="/index.html">Home</a></li>
+          <li id="page"><a class="nav-link" href="/about.html" aria-current="page">About</a></li>
+          <li id="page"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li id="page"><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
     </header>
     <main> 
-    <p>I am an Information Science major at Michigan State University with an extensive humanities background. Thankfully my passion for working with my hands has translated to the digital world. In the physical realm, I like to create various forms on the potter's wheel and design knitting or crochet patterns. Digitally, I have learned python, HTML, CAD, and Adobe Suite.</p>
-    <p>Being a designer in the real world has allowed me to learn a certain type of developmental thinking that combines aesthetic and functionalilty in whatever project I apply myself to.</p>
+    <h1>About Me</h1>
+    <p class="fluff-content">I am an Information Science major at Michigan State University with an extensive humanities background. Thankfully my passion for working with my hands has translated to the digital world. In the physical realm, I like to create various forms on the potter's wheel and design knitting or crochet patterns. Digitally, I have learned python, HTML, CAD, and Adobe Suite.</p>
+    <p class="fluff-content">Being a designer in the real world has allowed me to learn a certain type of developmental thinking that combines aesthetic and functionalilty in whatever project I apply myself to.</p>
     <h2>Creative Endeavors</h2>
-    <p>These are some of my creative projects that I have pursued in my free time.</p>
-    <h3>Like an Onion</h3>
+    <p class="fluff-content"  >These are some of my creative projects that I have pursued in my free time.</p>
     <figure>
-      <img src="Assets/like_an_onion.jpg" alt="Vase that looks like Shrek's head">
+      <h3>Like an Onion</h3>
+      <img class="figure-img" src="Assets/like_an_onion.jpg" alt="Vase that looks like Shrek's head" tabindex="0">
       <figcaption>A vase named "Like an Onion." The top of the vase vaguely resembles Shrek's head silhouette. I like this one the most because it was the first time I was able to throw a torus shape successfully (the donut shape). It's a very complex shape because it has two walls that need to be joined together and carfully trimmed to get two even sides.</figcaption>
     </figure>
-    <h3>Trophy Vase</h3>
     <figure>
-      <img src="Assets/trophy.jpg" alt="Vase that looks like a trophy">
-      <figcaption>A vase that resembles a trophy</figcaption>
+      <h3>Trophy Vase</h3>
+      <img class="figure-img" src="Assets/trophy.jpg" alt="Vase that looks like a trophy" tabindex="0">
+      <figcaption>A vase that resembles a trophy. It is purely decorative and does not have any space to hold objects.</figcaption>
     </figure>
-    <h3>Little Vase</h3>
     <figure>
-      <img src="Assets/vase1.jpg" alt="A small vase">
+      <h3>Little Vase</h3>
+      <img class="figure-img" src="Assets/vase1.jpg" alt="A small vase" tabindex="0">
       <figcaption>A small vase that ended up being my first "traditional" vase. This one is pretty interesting because quite a bit of it's shape comes from me dropping it on the table to finish off the foot of the vessel during the 'trimming' process. The bottom was too thin to create a nice foot for the piece.</figcaption>
     </figure>
-    <h3>Mosiac Blanket</h3>
     <figure>
-      <img src="Assets/mosiac_blanket.jpg" alt="A knit blanket done using mosaic colorwork">
+      <h3>Mosiac Blanket</h3>
+      <img class="figure-img" src="Assets/mosiac_blanket.jpg" alt="A knit blanket done using mosaic colorwork" tabindex="0">
       <figcaption>This blanket is near and dear to my heart becuase it took 5 years to complete and represents a significant portion of my young adult life. Many thoughts, emotions, and worries are woven into each stitch as I used it to navigate through that period of my life. The final blanket is large enough to cover a twin XL mattress. I still have the pattern memorized and it's been two years since I cast off that project.</figcaption>
     </figure>
   </main>
   <footer>
-    <p><small>&copy; 2026 Liz Koempel. All rights reserved.</small></p>
+    <p>&copy; 2026 Liz Koempel. All rights reserved.</p>
   </footer>
   </body>
 </html>

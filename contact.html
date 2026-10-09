@@ -9,34 +9,41 @@
     <meta property="og:image" content="Assets/page_prev_img.jpg">
     <meta property="og:description" content="This is Liz Koempel's portfoilo website. It has some pretty cool stuff on it.">
     <meta property="og:title" content="Liz Koempel">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Mogra&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Contact Me</h1>
     <header>
-      <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo"></a>
-       
+      <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo" class="logo"></a>
       <nav>
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/contact.html" aria-current="page">Contact</a></li>
+        <ul id="list" class="nav-list">
+          <li id="page"><a class="nav-link" href="/index.html">Home</a></li>
+          <li id="page"><a class="nav-link" href="/about.html">About</a></li>
+          <li id="page"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li id="page"><a class="nav-link" href="/contact.html" aria-current="page">Contact</a></li>
         </ul>
-        
       </nav>
     </header>
     <main>
-      <p>Leave a message at the beep!</p>
+      <h1>Contact Me</h1>
+      <p class="fluff-content" id="contact">Leave a message at the beep!</p>
       <!---Sorry, I am NOT putting my school email on the internet for it to get scraped and more spam gets sent to it.-->
-    <form method="get">
+    <form id="contact-form" class="form" method="get">
       <label>Name:<input name="submitted-name" autocomplete="name" required></label>
+      <br>
       <label>Email:<input name="submitted-email" type="email" autocomplete="email" required></label>
-      <label>Message:<textarea id="message" name="message" rows="10" cols="50" placeholder="Type your message here..." required></textarea></label>
+      <br>
+      <label>Message:<br><textarea id="message" name="message" rows="10" cols="50" placeholder="Type your message here..." required></textarea></label>
+      <br>  
       <button onclick="alert('Form submitted!')">Send</button>
     </form>
   </main>
   <footer>
-    <p><small>&copy; 2026 Liz Koempel. All rights reserved.</small></p>
+    <p>&copy; 2026 Liz Koempel. All rights reserved.</p>
   </footer>
   </body>
 </html>

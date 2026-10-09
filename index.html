@@ -9,30 +9,38 @@
     <meta property="og:image" content="Assets/page_prev_img.jpg">
     <meta property="og:description" content="This is Liz Koempel's portfoilo website. It has some pretty cool stuff on it.">
     <meta property="og:title" content="Liz Koempel">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Mogra&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Liz Koempel</h1>
+    <h1 class="name">Liz Koempel</h1>
     <header>
-      <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo"></a>
+      <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo" class="logo"></a>
       <nav>
-        <ul>
-          <li><a href="/index.html" aria-current="page">Home</a></li>
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/projects.html">Projects</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+        <ul id="list" class="nav-list">
+          <li id="page"><a class="nav-link" href="/index.html" aria-current="page">Home</a></li>
+          <li id="page"><a class="nav-link" href="/about.html">About</a></li>
+          <li id="page"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li id="page"><a class="nav-link" href="/contact.html">Contact</a></li>
         </ul>
         
       </nav>
     </header>
     <main>
     <h2>Hello!</h2>
-    <p>Welcome to my portfolio website! This is the place where I showcase my professional and creative projects. Feel free to explore the different sections to learn more about my work and interests.</p>
-    <a href="/projects.html">View Projects</a>
-    <a href="/about.html">Learn More About Me</a>
-    <a href="/contact.html">Get in Touch</a>
+    <p class="fluff-content">Welcome to my portfolio website! This is the place where I showcase my professional and creative projects. Feel free to explore the different sections to learn more about my work and interests.</p>
+    <div class="hero-buttons">
+    <a class="faux-button" href="/projects.html">View Projects</a>
+    <a class="faux-button" href="/about.html">Learn More About Me</a>
+    <a class="faux-button" href="/contact.html">Get in Touch</a>
+    </div>
   </main>
   <footer>
-    <p><small>&copy; 2026 Liz Koempel. All rights reserved.</small></p>
+    <p>&copy; 2026 Liz Koempel. All rights reserved.</p>
   </footer>
   </body>
 </html>

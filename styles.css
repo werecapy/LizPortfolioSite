@@ -1,0 +1,283 @@
+:root {
+  --primary-color: #111D4A;
+  --secondary-color: #8C6057;
+  --background-color: #FAE3C6;
+  --highlight-color: #FF00BF;
+  --new-color: #111D4A;
+  --figure-caption-color: #0e4749;
+  --mogra-font: "Mogra", system-ui;
+  --gudea-regular: "Gudea", sans-serif;
+}
+.mogra-regular {
+  font-family: "Mogra", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gudea-regular {
+  font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gudea-bold {
+  font-family: "Gudea", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gudea-regular-italic {
+  font-family: "Gudea", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+
+body {
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+
+}
+header {
+  background-color: var(--new-color);
+  padding: 1rem;
+  font-family: var(--mogra-font);
+
+  
+}
+
+nav {
+  background-color: var(--highlight-color);
+  padding: 1rem;
+}
+
+#page:hover {
+  font-size: 1.25rem;
+  color: var(--background-color);
+}
+
+#list.nav-list{
+  list-style: none;
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--mogra-font);
+}
+
+h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem; 
+  font-family: var(--mogra-font);
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: var(--mogra-font);
+}
+
+h1, h2, h3 {
+  max-width: 50%;
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+}
+.name {
+  margin: 20px;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 50%;
+  font-family: var(--gudea-regular);
+}
+
+a:hover {
+  color: var(--highlight-color);
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 20%;
+  max-height: 20%;
+  align-content: center;
+}
+
+.logo {
+  max-width: 10%;
+  max-height: 10%;
+  align-content: center;
+}
+
+figure {
+  /*margin: 10px;
+  padding: .5rem;
+  width: 75%;*/
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+  
+}
+
+figcaption {
+  color: var(--figure-caption-color);
+  font-size: 1.125rem;
+  font-style: italic;
+  max-width: 50%;
+  font-family: var(--gudea-regular);
+  text-indent: 3rem;
+  padding: 1rem;
+}
+
+footer p {
+  font-size: .875rem;
+  font-family: var(--gudea-regular);
+  color: var(--primary-color);
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+}
+
+ul.project-list {
+  list-style-type: "🩷";
+  padding: 0;
+  font-family: var(--mogra-font);
+  font-size: 1.50rem;
+  max-width: 50%;
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+
+}
+
+button:hover {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+}
+
+img.figure-img {
+  cursor: zoom-in;
+}
+
+img.figure-img:hover {
+  filter: grayscale(58%);
+  position: relative;
+	box-shadow: 10px 10px 9px -1px  #3D2F2F;
+}
+
+img.figure-img:focus {
+  transform: scale(2) translate(25%, 25%);
+  filter: none;
+  box-shadow: none;
+}
+
+.logo {
+  max-width: 10%;
+  max-height: 10%;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo:focus{
+  transform: scale(1.1);
+}
+
+#contact-form  {
+  font-size: 1.25rem;
+  font-family: var(--gudea-regular);
+  padding: 80px;
+  margin: 40px;
+}
+
+label {
+  line-height: 5;
+}
+
+.message {
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-family: var(--gudea-regular);
+}
+
+input, textarea {
+  background-color:#FFFFFF;
+	position: relative;
+	box-shadow: 10px 10px 9px -1px  #3D2F2F;
+}
+textarea {	
+  width: 300px;
+	height: 100px;
+}
+
+.project-title {
+  background-color: var(--new-color);
+  padding: 1rem;
+  margin: 40px;
+  border: 1px ;
+  color: var(--background-color);
+}
+
+.job {
+  padding: 1rem;
+  margin: 40px;
+  border: 1px ;
+}
+
+.job-description {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 50%;
+  border: 1px ;
+  margin: 3rem;
+}
+
+.fluff-content {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 50%;
+  font-family: var(--gudea-regular);
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+}
+
+.faux-button {
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  
+}
+
+.faux-button:hover {
+  background-color: var(--highlight-color);
+  color: #002626;
+}
+
+.hero-buttons {
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.fluff-content#contact {
+  margin: 40px;
+}
+a.nav-link:hover {
+  color: var(--background-color);
+}
