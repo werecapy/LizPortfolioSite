@@ -42,6 +42,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto 
+
 }
 header {
   background-color: var(--new-color);
@@ -198,8 +199,8 @@ img.figure-img:focus {
 #contact-form  {
   font-size: 1.25rem;
   font-family: var(--gudea-regular);
-  padding: 40px;
-  margin: 80px;
+  padding: 80px;
+  margin: 40px;
 }
 
 label {
