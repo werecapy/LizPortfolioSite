@@ -10,27 +10,27 @@
     <meta property="og:description" content="This is Liz Koempel's portfoilo website. It has some pretty cool stuff on it.">
     <meta property="og:title" content="Liz Koempel">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Mogra&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Contact Me</h1>
     <header>
       <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo" class="logo"></a>
-       
       <nav>
         <ul id="list" class="nav-list">
-          <li id="page"><a href="/index.html">Home</a></li>
-          <li id="page"><a href="/about.html">About</a></li>
-          <li id="page"><a href="/projects.html">Projects</a></li>
-          <li id="page"><a href="/contact.html" aria-current="page">Contact</a></li>
+          <li id="page"><a class="nav-link" href="/index.html">Home</a></li>
+          <li id="page"><a class="nav-link" href="/about.html">About</a></li>
+          <li id="page"><a class="nav-link" href="/projects.html">Projects</a></li>
+          <li id="page"><a class="nav-link" href="/contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <p class="fluff-content">Leave a message at the beep!</p>
+      <h1>Contact Me</h1>
+      <p class="fluff-content" id="contact">Leave a message at the beep!</p>
       <!---Sorry, I am NOT putting my school email on the internet for it to get scraped and more spam gets sent to it.-->
     <form id="contact-form" class="form" method="get">
       <label>Name:<input name="submitted-name" autocomplete="name" required></label>

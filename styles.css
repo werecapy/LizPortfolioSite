@@ -1,9 +1,9 @@
 :root {
-  --primary-color: #0E4749;
-  --secondary-color: #002626;
-  --background-color: #C4A29E;
-  --highlight-color: #f40076;
-  --new-color: #EBA6A9;
+  --primary-color: #111D4A;
+  --secondary-color: #8C6057;
+  --background-color: #FAE3C6;
+  --highlight-color: #FF00BF;
+  --new-color: #111D4A;
   --figure-caption-color: #0e4749;
   --mogra-font: "Mogra", system-ui;
   --gudea-regular: "Gudea", sans-serif;
@@ -47,16 +47,18 @@ header {
   background-color: var(--new-color);
   padding: 1rem;
   font-family: var(--mogra-font);
+
   
 }
 
 nav {
-  background-color: var(--new-color);
+  background-color: var(--highlight-color);
   padding: 1rem;
 }
 
 #page:hover {
   font-size: 1.25rem;
+  color: var(--background-color);
 }
 
 #list.nav-list{
@@ -90,6 +92,9 @@ h1, h2, h3 {
   padding: 1rem;
   border: 1px ;
 }
+.name {
+  margin: 20px;
+}
 
 p {
   color: var(--secondary-color);
@@ -117,11 +122,13 @@ img {
 }
 
 figure {
-  margin: 20px;
+  /*margin: 10px;
   padding: .5rem;
-  width: 75%;
-  align-content: center;
-  background-color: var(--new-color);
+  width: 75%;*/
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+  
 }
 
 figcaption {
@@ -129,7 +136,6 @@ figcaption {
   font-size: 1.125rem;
   font-style: italic;
   max-width: 50%;
-  align-content: center;
   font-family: var(--gudea-regular);
   text-indent: 3rem;
   padding: 1rem;
@@ -139,22 +145,21 @@ footer p {
   font-size: .875rem;
   font-family: var(--gudea-regular);
   color: var(--primary-color);
-}
-
-#contact-form {
+  margin: 80px;
   padding: 1rem;
-  font-size: 1.25rem;
-  font-family: var(--gudea-regular);
+  border: 1px ;
 }
 
 ul.project-list {
   list-style-type: "🩷";
   padding: 0;
   font-family: var(--mogra-font);
+  font-size: 1.50rem;
   max-width: 50%;
   margin: 80px;
   padding: 1rem;
   border: 1px ;
+
 }
 
 button:hover {
@@ -164,10 +169,6 @@ button:hover {
 
 img.figure-img {
   cursor: zoom-in;
-  display: block;
-  margin-left: auto;
-  margin-right: auto 
-  
 }
 
 img.figure-img:hover {
@@ -194,16 +195,18 @@ img.figure-img:focus {
   transform: scale(1.1);
 }
 
-contact-form  {
+#contact-form  {
   font-size: 1.25rem;
   font-family: var(--gudea-regular);
+  padding: 40px;
+  margin: 80px;
 }
 
 label {
   line-height: 5;
 }
 
-message.message {
+.message {
   padding: 1rem;
   font-size: 1.25rem;
   font-family: var(--gudea-regular);
@@ -224,6 +227,7 @@ textarea {
   padding: 1rem;
   margin: 40px;
   border: 1px ;
+  color: var(--background-color);
 }
 
 .job {
@@ -255,11 +259,24 @@ textarea {
 .faux-button {
   border: 1px solid var(--primary-color);
   padding: 1rem;
-  background-color: var(--new-color);
-  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  
 }
 
 .faux-button:hover {
   background-color: var(--highlight-color);
   color: #002626;
+}
+
+.hero-buttons {
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.fluff-content#contact {
+  margin: 40px;
+}
+a.nav-link:hover {
+  color: var(--background-color);
 }
