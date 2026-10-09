@@ -32,11 +32,16 @@
   font-style: italic;
 }
 
+
+
 body {
   background-color: var(--background-color);
   color: var(--secondary-color);
   font-family: Arial, sans-serif;
   padding: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
 }
 header {
   background-color: var(--new-color);
@@ -79,6 +84,13 @@ h3 {
   font-family: var(--mogra-font);
 }
 
+h1, h2, h3 {
+  max-width: 50%;
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+}
+
 p {
   color: var(--secondary-color);
   font-size: 1.25rem;
@@ -105,24 +117,28 @@ img {
 }
 
 figure {
-  margin: 1rem 0;
-  padding: 0;
+  margin: 20px;
+  padding: .5rem;
+  width: 75%;
   align-content: center;
+  background-color: var(--new-color);
 }
 
 figcaption {
   color: var(--figure-caption-color);
   font-size: 1.125rem;
   font-style: italic;
-  max-width: 20%;
+  max-width: 50%;
   align-content: center;
   font-family: var(--gudea-regular);
   text-indent: 3rem;
+  padding: 1rem;
 }
 
 footer p {
   font-size: .875rem;
   font-family: var(--gudea-regular);
+  color: var(--primary-color);
 }
 
 #contact-form {
@@ -135,6 +151,10 @@ ul.project-list {
   list-style-type: "🩷";
   padding: 0;
   font-family: var(--mogra-font);
+  max-width: 50%;
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
 }
 
 button:hover {
@@ -144,6 +164,10 @@ button:hover {
 
 img.figure-img {
   cursor: zoom-in;
+  display: block;
+  margin-left: auto;
+  margin-right: auto 
+  
 }
 
 img.figure-img:hover {
@@ -158,11 +182,16 @@ img.figure-img:focus {
   box-shadow: none;
 }
 
-img.logo {
+.logo {
   max-width: 10%;
   max-height: 10%;
-  align-content: center;
-  background-color: none;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.logo:focus{
+  transform: scale(1.1);
 }
 
 contact-form  {
@@ -188,4 +217,49 @@ input, textarea {
 textarea {	
   width: 300px;
 	height: 100px;
+}
+
+.project-title {
+  background-color: var(--new-color);
+  padding: 1rem;
+  margin: 40px;
+  border: 1px ;
+}
+
+.job {
+  padding: 1rem;
+  margin: 40px;
+  border: 1px ;
+}
+
+.job-description {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 50%;
+  border: 1px ;
+  margin: 3rem;
+}
+
+.fluff-content {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 50%;
+  font-family: var(--gudea-regular);
+  margin: 80px;
+  padding: 1rem;
+  border: 1px ;
+}
+
+.faux-button {
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  background-color: var(--new-color);
+  color: var(--primary-color);
+}
+
+.faux-button:hover {
+  background-color: var(--highlight-color);
+  color: #002626;
 }
