@@ -57,7 +57,7 @@ nav {
   padding: 1rem;
 }
 
-#page:hover {
+.page:hover {
   font-size: 1.25rem;
   color: var(--background-color);
 }
