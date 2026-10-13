@@ -99,7 +99,6 @@ h3 {
 
 h1, h2, h3 {
   max-width: 50%;
-  margin: 80px;
   padding: 1rem;
   border: 1px ;
 }
@@ -136,9 +135,6 @@ figure {
   /*margin: 10px;
   padding: .5rem;
   width: 75%;*/
-  margin: 80px;
-  padding: 1rem;
-  border: 1px ;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 
@@ -148,11 +144,9 @@ figcaption {
   color: var(--figure-caption-color);
   font-size: 1.125rem;
   font-style: italic;
-  max-width: 50%;
   font-family: var(--gudea-regular);
   text-indent: 3rem;
-  padding: 1rem;
-  scroll-snap-align: center;
+
 }
 
 footer p {
@@ -303,21 +297,21 @@ a.nav-link:hover {
 }
 .personal_projects {
   width: 100vw;
-  height: 300px;
-  padding: 20px;
+  height: 700px;
+  padding: 2px;
   display: flex;
   gap: 4vw;
 }
 .personal_projects_entry{
   list-style-type: none;
-  background-color: #eeeeee;
-  border: 1px solid #dddddd;
+  background-color: var(--background-color);
+
   padding: 20px;
 
   flex: 0 0 100%;
 }
 .personal_projects_entry:nth-child(even) {
-  background-color: cyan;
+  background-color: var(--highlight-color);
 }
 .personal_projects {
   overflow-x: scroll;
