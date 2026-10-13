@@ -8,6 +8,11 @@
   --mogra-font: "Mogra", system-ui;
   --gudea-regular: "Gudea", sans-serif;
 }
+
+/**main {
+  margin: 0 auto;
+  width: 80px;
+}**/
 .mogra-regular {
   font-family: "Mogra", system-ui;
   font-weight: 400;
@@ -129,7 +134,9 @@ figure {
   margin: 80px;
   padding: 1rem;
   border: 1px ;
-  
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
 }
 
 figcaption {
@@ -140,6 +147,7 @@ figcaption {
   font-family: var(--gudea-regular);
   text-indent: 3rem;
   padding: 1rem;
+  scroll-snap-align: center;
 }
 
 footer p {
@@ -280,4 +288,82 @@ textarea {
 }
 a.nav-link:hover {
   color: var(--background-color);
+}
+
+
+
+/** pasted from docs **/
+* {
+  box-sizing: border-box;
+}
+.personal_projects {
+  width: 100vw;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+}
+.personal_projects_entry{
+  list-style-type: none;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  padding: 20px;
+
+  flex: 0 0 100%;
+}
+.personal_projects_entry:nth-child(even) {
+  background-color: cyan;
+}
+.personal_projects {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+.personal_projects_entry {
+  scroll-snap-align: center;
+}
+.personal_projects::scroll-button(*) {
+  border: 0;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.personal_projects::scroll-button(*):hover,
+.personal_projects::scroll-button(*):focus {
+  opacity: 1;
+}
+
+.personal_projects::scroll-button(*):active {
+  translate: 1px 1px;
+}
+
+.personal_projects::scroll-button(*):disabled {
+  opacity: 0.2;
+  cursor: unset;
+}
+.personal_projects::scroll-button(left) {
+  content: "◄" / "Previous";
+}
+
+.personal_projects::scroll-button(right) {
+  content: "►" / "Next";
+}
+.personal_projects {
+  anchor-name: --my-carousel;
+}
+
+.personal_projects::scroll-button(*) {
+  position: absolute;
+  position-anchor: --my-carousel;
+}
+.personal_projects::scroll-button(left) {
+  right: calc(anchor(left) - 70px);
+  bottom: calc(anchor(top) + 13px);
+}
+
+.personal_projects::scroll-button(right) {
+  left: calc(anchor(right) - 70px);
+  bottom: calc(anchor(top) + 13px);
 }
