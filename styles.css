@@ -54,12 +54,17 @@ header {
   padding: 1rem;
   font-family: var(--mogra-font);
 
-  
+  border-top: 7px solid var(--highlight-color);
 }
 
 nav {
-  background-color: var(--highlight-color);
+  background-color: var(--background-color);
   padding: 1rem;
+  
+}
+
+.nav-link {
+  color: var(--primary-color);
 }
 
 .page:hover {
@@ -287,7 +292,7 @@ textarea {
   margin: 40px;
 }
 a.nav-link:hover {
-  color: var(--background-color);
+  color: var(--highlight-color);
 }
 
 
