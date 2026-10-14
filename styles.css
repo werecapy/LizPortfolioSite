@@ -126,8 +126,8 @@ figure {
   /*margin: 10px;
   padding: .5rem;
   width: 75%;*/
-  border-top: 7px solid var(--highlight-color);
-  
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 
 }
 
@@ -319,7 +319,7 @@ footer {
 }
 .personal_projects {
   width: 100vw;
-  height: 600px;
+  height: 700px;
   padding: 2px;
   display: flex;
   gap: 4vw;
@@ -332,14 +332,15 @@ footer {
 
   flex: 0 0 100%;
 }
-
+.personal_projects_entry:nth-child(even) {
+  background-color: var(--highlight-color);
+}
 .personal_projects {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
 .personal_projects_entry {
   scroll-snap-align: center;
-  
 }
 .personal_projects::scroll-button(*) {
   border: 0;
