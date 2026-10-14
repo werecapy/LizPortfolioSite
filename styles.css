@@ -120,7 +120,7 @@ img {
 .logo {
   max-width: 10%;
   max-height: 10%;
-
+}
 
 figure {
   /*margin: 10px;
@@ -144,7 +144,7 @@ footer p {
   font-size: .875rem;
   font-family: var(--gudea-regular);
   color: var(--primary-color);
-
+}
 
 ul.project-list {
   list-style-type: "🩷";
@@ -273,62 +273,44 @@ a.nav-link:hover {
 
 
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    gap: 0px;
-}
-    
-header {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
+header,
+footer {
+  grid-column: 1 / -1;
 }
 
-.left-area {
-    grid-row: span 6 / span 6;
-    grid-row-start: 3;
-    /* Gives the empty box a visible size */
-  width: 200px;
+#left-area,
+#right-area {
   height: 200px;
-  
-  /* Makes the box outline visible */
   border: 2px solid #333333;
-  
-  /* Optional: gives it a background color */
   background-color: #f9f9f9;
-  
-  /* Ensures padding doesn't break your width/height calculations */
-  box-sizing: border-box; 
+  align-self: start;
+}
+
+#left-area {
+  grid-column: 1;
+  grid-row: 2;
 }
 
 main {
-    grid-column: span 2 / span 2;
-    grid-row: span 6 / span 6;
-    grid-row-start: 3;
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
 }
 
-.right area{
-    grid-row: span 6 / span 6;
-    grid-column-start: 4;
-    grid-row-start: 3;
-    /* Gives the empty box a visible size */
-  width: 200px;
-  height: 200px;
-  
-  /* Makes the box outline visible */
-  border: 2px solid #333333;
-  
-  /* Optional: gives it a background color */
-  background-color: #f9f9f9;
-  
-  /* Ensures padding doesn't break your width/height calculations */
-  box-sizing: border-box; 
+#right-area {
+  grid-column: 3;
+  grid-row: 2;
 }
 
 footer {
-    grid-column: span 4 / span 4;
-    grid-row-start: 9;
+  grid-row: 3;
+}
+
+
+
+  main {
+    grid-column: 2;
+  }
 }
         
 /** pasted from docs **/
