@@ -43,15 +43,14 @@ body {
   background-color: var(--background-color);
   color: var(--secondary-color);
   font-family: Arial, sans-serif;
-  padding: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto 
+  
+
+
 
 }
 header {
   background-color: var(--new-color);
-  padding: 1rem;
+  
   font-family: var(--mogra-font);
 
   border-top: 7px solid var(--highlight-color);
@@ -59,7 +58,6 @@ header {
 
 nav {
   background-color: var(--background-color);
-  padding: 1rem;
   
 }
 
@@ -79,38 +77,33 @@ nav {
 h1 {
   color: var(--primary-color);
   font-size: 2.5rem;
-  margin-bottom: 1rem;
   font-family: var(--mogra-font);
 }
 
 h2 {
   color: var(--primary-color);
   font-size: 2rem;
-  margin-bottom: 1rem; 
   font-family: var(--mogra-font);
 }
 
 h3 {
   color: var(--primary-color);
   font-size: 1.5rem;
-  margin-bottom: 1rem;
   font-family: var(--mogra-font);
 }
 
 h1, h2, h3 {
   max-width: 50%;
-  padding: 1rem;
-  border: 1px ;
+
 }
 .name {
-  margin: 20px;
+
 }
 
 p {
   color: var(--secondary-color);
   font-size: 1.25rem;
   line-height: 1.6;
-  max-width: 50%;
   font-family: var(--gudea-regular);
 }
 
@@ -120,16 +113,14 @@ a:hover {
 }
 
 img {
-  max-width: 20%;
-  max-height: 20%;
+
   align-content: center;
 }
 
 .logo {
   max-width: 10%;
   max-height: 10%;
-  align-content: center;
-}
+
 
 figure {
   /*margin: 10px;
@@ -153,20 +144,15 @@ footer p {
   font-size: .875rem;
   font-family: var(--gudea-regular);
   color: var(--primary-color);
-  margin: 80px;
-  padding: 1rem;
-  border: 1px ;
-}
+
 
 ul.project-list {
   list-style-type: "🩷";
-  padding: 0;
+  
   font-family: var(--mogra-font);
   font-size: 1.50rem;
-  max-width: 50%;
-  margin: 80px;
-  padding: 1rem;
-  border: 1px ;
+
+
 
 }
 
@@ -206,8 +192,7 @@ img.figure-img:focus {
 #contact-form  {
   font-size: 1.25rem;
   font-family: var(--gudea-regular);
-  padding: 80px;
-  margin: 40px;
+
 }
 
 label {
@@ -232,36 +217,27 @@ textarea {
 
 .project-title {
   background-color: var(--new-color);
-  padding: 1rem;
-  margin: 40px;
-  border: 1px ;
+
   color: var(--background-color);
 }
 
 .job {
-  padding: 1rem;
-  margin: 40px;
-  border: 1px ;
+
 }
 
 .job-description {
   color: var(--secondary-color);
   font-size: 1.25rem;
   line-height: 1.6;
-  max-width: 50%;
-  border: 1px ;
-  margin: 3rem;
+  
 }
 
 .fluff-content {
   color: var(--secondary-color);
   font-size: 1.25rem;
   line-height: 1.6;
-  max-width: 50%;
+
   font-family: var(--gudea-regular);
-  margin: 80px;
-  padding: 1rem;
-  border: 1px ;
 }
 
 .faux-button {
@@ -278,12 +254,12 @@ textarea {
 }
 
 .hero-buttons {
-  margin: 2rem;
-  padding: 1rem;
+ 
+
 }
 
 .fluff-content#contact {
-  margin: 40px;
+
 }
 a.nav-link:hover {
   color: var(--highlight-color);
@@ -291,6 +267,70 @@ a.nav-link:hover {
 
 
 
+
+
+/**CSS for placing stuff**/
+
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 0px;
+}
+    
+header {
+    grid-column: span 4 / span 4;
+    grid-row: span 2 / span 2;
+}
+
+.left-area {
+    grid-row: span 6 / span 6;
+    grid-row-start: 3;
+    /* Gives the empty box a visible size */
+  width: 200px;
+  height: 200px;
+  
+  /* Makes the box outline visible */
+  border: 2px solid #333333;
+  
+  /* Optional: gives it a background color */
+  background-color: #f9f9f9;
+  
+  /* Ensures padding doesn't break your width/height calculations */
+  box-sizing: border-box; 
+}
+
+main {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-row-start: 3;
+}
+
+.right area{
+    grid-row: span 6 / span 6;
+    grid-column-start: 4;
+    grid-row-start: 3;
+    /* Gives the empty box a visible size */
+  width: 200px;
+  height: 200px;
+  
+  /* Makes the box outline visible */
+  border: 2px solid #333333;
+  
+  /* Optional: gives it a background color */
+  background-color: #f9f9f9;
+  
+  /* Ensures padding doesn't break your width/height calculations */
+  box-sizing: border-box; 
+}
+
+footer {
+    grid-column: span 4 / span 4;
+    grid-row-start: 9;
+}
+        
 /** pasted from docs **/
 * {
   box-sizing: border-box;
