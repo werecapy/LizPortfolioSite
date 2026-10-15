@@ -14,12 +14,35 @@
   display: grid;
 
 }
-
-#projects .job {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+@media (min-width: 600px) {
+  
+  #projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, auto));
+  gap: 1em;
 }
+#projects h2{
+  display: grid;
+  grid-column: span 2 / span 2;
+}
+}
+
+@media (min-width: 1000px) {
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(100px, auto));
+    gap: 1em;
+  }
+
+  #projects h2{
+  display: grid;
+  grid-column: span 3 / span 3;
+  }
+}
+
+
 .mogra-regular {
   font-family: "Mogra", system-ui;
   font-weight: 400;
@@ -85,7 +108,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px ;
+  margin: 20px ;
 }
 
 h1 {
@@ -138,8 +161,10 @@ img {
 
 figure {
   /*margin: 10px;
-  padding: .5rem;
+  
   width: 75%;*/
+  border-top: 2px solid var(--primary-color);
+  padding: .5rem;
 }
 
 figcaption {
@@ -192,7 +217,11 @@ img.figure-img:focus {
   filter: none;
   box-shadow: none;
 }
-
+@media (max-width: 600px) {
+  img.figure-img:focus {
+    transform: scale(5) translate(25%, 25%);
+  }
+}
 .logo {
   max-width: 10%;
   max-height: 10%;
@@ -208,12 +237,14 @@ img.figure-img:focus {
 #contact-form  {
   font-size: 1.25rem;
   font-family: var(--gudea-regular);
-
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
-label {
-  line-height: 5;
-}
+
 
 .message {
   padding: 1rem;
@@ -250,13 +281,39 @@ textarea {
 
   font-family: var(--gudea-regular);
 }
+@media (min-width: 600px) {
+  /**ai output -make a centered grid for my faux buttons**/
+  .hero-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+}
+
+@media (min-width: 1000px) {
+ .hero-buttons {
+  /**used the output, but changed for the bigger screen**/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+}
+
+
+
+
 
 .faux-button {
   border: 1px solid var(--primary-color);
   padding: 1rem;
   background-color: var(--secondary-color);
   color: var(--background-color);
-  
+  text-align: center;
 }
 
 .faux-button:hover {
@@ -264,14 +321,6 @@ textarea {
   color: #002626;
 }
 
-.hero-buttons {
- 
-
-}
-
-.fluff-content#contact {
-
-}
 a.nav-link:hover {
   color: var(--highlight-color);
 }
@@ -330,7 +379,7 @@ footer {
 }
 .personal_projects {
   width: 80%;
-  height: 850px;
+  height: 750px;
   padding: 2px;
   display: flex;
   gap: 4vw;
@@ -343,9 +392,7 @@ footer {
 
   flex: 0 0 100%;
 }
-.personal_projects_entry:nth-child(even) {
-  background-color: var(--highlight-color);
-}
+
 .personal_projects {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
