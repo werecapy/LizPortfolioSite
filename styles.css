@@ -339,49 +339,7 @@ a.nav-link:hover {
   scroll-snap-type: x mandatory;
 }
 
-.personal_projects::scroll-button(*) {
-  border: 0;
-  font-size: 2rem;
-  background: none;
-  color: black;
-  opacity: 0.7;
-  cursor: pointer;
-}
 
-.personal_projects::scroll-button(*):hover,
-.personal_projects::scroll-button(*):focus {
-  opacity: 1;
-}
 
-.personal_projects::scroll-button(*):active {
-  translate: 1px 1px;
-}
 
-.personal_projects::scroll-button(*):disabled {
-  opacity: 0.2;
-  cursor: unset;
-}
-.personal_projects::scroll-button(left) {
-  content: "◄" / "Previous";
-}
 
-.personal_projects::scroll-button(right) {
-  content: "►" / "Next";
-}
-.personal_projects {
-  anchor-name: --my-carousel;
-}
-
-.personal_projects::scroll-button(*) {
-  position: absolute;
-  position-anchor: --my-carousel;
-}
-.personal_projects::scroll-button(left) {
-  right: calc(anchor(left) - 70px);
-  bottom: calc(anchor(top) + 13px);
-}
-
-.personal_projects::scroll-button(right) {
-  left: calc(anchor(right) - 70px);
-  bottom: calc(anchor(top) + 13px);
-}
