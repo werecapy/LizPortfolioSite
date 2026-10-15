@@ -14,35 +14,21 @@
   display: grid;
 
 }
-@media (min-width: 600px) {
-  
-  #projects {
+
+/**Make a display grid of the projects id for mobile and desktop**/
+#projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, minmax(100px, auto));
-  gap: 1em;
-}
-#projects h2{
-  display: grid;
-  grid-column: span 2 / span 2;
-}
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   #projects {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, minmax(100px, auto));
-    gap: 1em;
-  }
-
-  #projects h2{
-  display: grid;
-  grid-column: span 3 / span 3;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
   }
 }
-
-
+/**end of ai output**/
 .mogra-regular {
   font-family: "Mogra", system-ui;
   font-weight: 400;
@@ -88,6 +74,7 @@ header {
 
 nav {
   background-color: var(--background-color);
+  font-size: 1.25rem;
   
 }
 
@@ -96,7 +83,7 @@ nav {
 }
 
 .page:hover {
-  font-size: 1.25rem;
+  font-size: 2rem;
   color: var(--background-color);
 }
 
@@ -133,10 +120,6 @@ h1, h2, h3 {
   max-width: 50%;
 
 }
-.name {
-
-}
-
 p {
   color: var(--secondary-color);
   font-size: 1.25rem;
@@ -155,8 +138,9 @@ img {
 }
 
 .logo {
-  max-width: 10%;
-  max-height: 10%;
+  /**why is my logo disappearing when the window is small?**/
+  width:clamp(100px, 10vw, 500px);
+  padding: 1.5rem;
 }
 
 figure {
@@ -180,6 +164,7 @@ footer p {
   font-size: .875rem;
   font-family: var(--gudea-regular);
   color: var(--primary-color);
+  padding: 1.5rem;
 }
 
 ul.project-list {
@@ -194,7 +179,7 @@ ul.project-list {
 
 button:hover {
   background-color: var(--highlight-color);
-  color: var(--background-color);
+  color: var(--primary-color);
 }
 
 img.figure-img {
@@ -222,10 +207,7 @@ img.figure-img:focus {
     transform: scale(5) translate(25%, 25%);
   }
 }
-.logo {
-  max-width: 10%;
-  max-height: 10%;
-}
+
 .logo:hover {
   transform: scale(1.1);
 }
@@ -281,7 +263,7 @@ textarea {
 
   font-family: var(--gudea-regular);
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   /**ai output -make a centered grid for my faux buttons**/
   .hero-buttons {
     display: grid;
@@ -293,7 +275,7 @@ textarea {
   }
 }
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
  .hero-buttons {
   /**used the output, but changed for the bigger screen**/
     display: grid;
@@ -329,50 +311,9 @@ a.nav-link:hover {
 
 
 
-/**CSS for placing stuff**/
 
 
-
-header,
-footer {
-  grid-column: 1 / -1;
-}
-
-#left-area,
-#right-area {
-  height: 200px;
-  border: 2px solid #333333;
-  background-color: #f9f9f9;
-  align-self: start;
-}
-
-#left-area {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-main {
-  grid-column: 2;
-  grid-row: 2;
-  min-width: 0;
-}
-
-#right-area {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-footer {
-  grid-row: 3;
-}
-
-
-
-  main {
-    grid-column: 2;
-  }
-
-        
+  
 /** pasted from docs **/
 * {
   box-sizing: border-box;
