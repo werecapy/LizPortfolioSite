@@ -8,11 +8,18 @@
   --mogra-font: "Mogra", system-ui;
   --gudea-regular: "Gudea", sans-serif;
 }
-
-/**main {
+  main {
   margin: 0 auto;
-  width: 80px;
-}**/
+  width: 80%;
+  display: grid;
+
+}
+
+#projects .job {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 .mogra-regular {
   font-family: "Mogra", system-ui;
   font-weight: 400;
@@ -74,6 +81,13 @@ nav {
   list-style: none;
 }
 
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px ;
+}
+
 h1 {
   color: var(--primary-color);
   font-size: 2.5rem;
@@ -126,9 +140,6 @@ figure {
   /*margin: 10px;
   padding: .5rem;
   width: 75%;*/
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-
 }
 
 figcaption {
@@ -163,6 +174,11 @@ button:hover {
 
 img.figure-img {
   cursor: zoom-in;
+  max-width: 30%;
+}
+
+.project-title {
+  padding: 1rem;
 }
 
 img.figure-img:hover {
@@ -215,20 +231,15 @@ textarea {
 	height: 100px;
 }
 
-.project-title {
-  background-color: var(--new-color);
 
-  color: var(--background-color);
-}
 
-.job {
 
-}
 
 .job-description {
   color: var(--secondary-color);
   font-size: 1.25rem;
   line-height: 1.6;
+  text-indent: 3rem;
   
 }
 
@@ -311,15 +322,15 @@ footer {
   main {
     grid-column: 2;
   }
-}
+
         
 /** pasted from docs **/
 * {
   box-sizing: border-box;
 }
 .personal_projects {
-  width: 100vw;
-  height: 700px;
+  width: 80%;
+  height: 850px;
   padding: 2px;
   display: flex;
   gap: 4vw;
@@ -339,9 +350,7 @@ footer {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
-.personal_projects_entry {
-  scroll-snap-align: center;
-}
+
 .personal_projects::scroll-button(*) {
   border: 0;
   font-size: 2rem;
