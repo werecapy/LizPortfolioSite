@@ -263,10 +263,10 @@ textarea {
 
   font-family: var(--gudea-regular);
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   /**ai output -make a centered grid for my faux buttons**/
   .hero-buttons {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
     justify-content: center;
     justify-items: center;
@@ -275,17 +275,17 @@ textarea {
   }
 }
 
-
+@media (max-width: 600px) {
  .hero-buttons {
   /**used the output, but changed for the bigger screen**/
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+    grid-template-columns: repeat(auto, minmax(min(100%, 14rem), 1fr));
     justify-content: center;
     gap: 1rem;
     margin: 1.5rem 0;
   }
 
-
+}
 
 
 
@@ -333,6 +333,21 @@ a.nav-link:hover {
 
   flex: 0 0 100%;
 }
+/**AI - make a media query button that will be bigger when it is in mobile**/
+@media (min-width: 600px) {
+  button {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  button {
+    min-height: 3.5rem;
+    padding: 1.25rem 1.5rem;
+    font-size: 1.25rem;
+  }
+}
+/**end of ai output**/
 
 .personal_projects {
   overflow-x: scroll;
