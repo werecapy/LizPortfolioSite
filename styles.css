@@ -275,7 +275,7 @@ textarea {
   }
 }
 
-@media (max-width: 1000px) {
+
  .hero-buttons {
   /**used the output, but changed for the bigger screen**/
     display: grid;
@@ -284,7 +284,7 @@ textarea {
     gap: 1rem;
     margin: 1.5rem 0;
   }
-}
+
 
 
 
@@ -338,7 +338,6 @@ a.nav-link:hover {
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
-
 
 
 
