@@ -70,16 +70,22 @@ header {
   font-family: var(--mogra-font);
 
   border-top: 7px solid var(--highlight-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 nav {
   background-color: var(--background-color);
   font-size: 1.25rem;
+
   
 }
 
 .nav-link {
   color: var(--primary-color);
+  background-color: var(--background-color);
 }
 
 .page:hover {
@@ -96,6 +102,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 20px ;
+  background-color: var(--background-color);
 }
 
 h1 {
@@ -163,8 +170,17 @@ figcaption {
 footer p {
   font-size: .875rem;
   font-family: var(--gudea-regular);
-  color: var(--primary-color);
+  color: var(--background-color);
   padding: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  position: fixed, bottom;
+
+  background-color: var(--primary-color);
 }
 
 ul.project-list {
@@ -196,7 +212,13 @@ img.figure-img:hover {
   position: relative;
 	box-shadow: 10px 10px 9px -1px  #3D2F2F;
 }
-
+.error-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
 img.figure-img:focus {
   transform: scale(2) translate(25%, 25%);
   filter: none;
@@ -287,6 +309,27 @@ textarea {
 
 }
 
+
+a.glow-link {
+  position: relative;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+a.glow-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.25s ease, left 0.25s ease;
+}
+a.glow-link:hover::after,
+a.glow-link:focus-visible::after {
+  width: 100%;
+  left: 0;
+}
 
 
 
