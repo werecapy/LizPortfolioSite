@@ -219,6 +219,13 @@ img.figure-img:hover {
   justify-content: center;
   height: 100%;
 }
+
+.message {
+  font-size: 2rem;
+  font-family: var(--gudea-regular);
+  text-align: center;
+}
+
 img.figure-img:focus {
   transform: scale(2) translate(25%, 25%);
   filter: none;
@@ -312,7 +319,6 @@ textarea {
 
 a.glow-link {
   position: relative;
-  color: var(--primary-color);
   text-decoration: none;
 }
 a.glow-link::after {
