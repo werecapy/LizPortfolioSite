@@ -8,10 +8,16 @@
   --mogra-font: "Mogra", system-ui;
   --gudea-regular: "Gudea", sans-serif;
 }
+/*The navigation’s header is set to position: fixed; top: 0, which takes it out of the normal page layout. The content doesn’t reserve space for its height, so <main> starts at the top and slides underneath the banner. The main rule has a horizontal margin but no top spacing. See styles.css:67 and styles.css:11.
+
+To keep the banner fixed, add top padding or margin to main that’s at least the header’s height. Alternatively, remove position: fixed if the banner doesn’t need to stay on screen while scrolling.
+*/
+
   main {
   margin: 0 auto;
   width: 80%;
   display: grid;
+  padding-top: 13rem;
 
 }
 
@@ -62,7 +68,11 @@ body {
   
 
 
+/*Why do links show over the nav bar header?
+The header is fixed, but it has no z-index. Meanwhile, .glow-link sets links to position: relative; when they overlap the header while scrolling, they can be painted above it because they appear later in the page. These rules are in styles.css:73 and styles.css:326.
 
+Set a z-index on the header so it stays on top:
+*/
 }
 header {
   background-color: var(--new-color);
@@ -74,6 +84,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 nav {
