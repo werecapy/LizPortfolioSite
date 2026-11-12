@@ -7,3 +7,6 @@ make carousel for personal projects. [text](https://developer.mozilla.org/en-US/
 Look at this for cursor interactivityhttps://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/pointer-events
 
 look at this for header nav
+
+Look at this for header navhttps://skillcrush.com/blog/projects-you-can-do-with-javascript/ 
+^^^JS
