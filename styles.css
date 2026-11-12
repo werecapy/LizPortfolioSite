@@ -213,15 +213,17 @@ img.figure-img {
   cursor: zoom-in;
   max-width: 30%;
 }
+/* I like whwere the nav banner is, but when I navigate to the sections, the headers are under the banner.
 
+*/
 .project-title {
   padding: 1rem;
+  scroll-margin-top: 13rem;
 }
 
 img.figure-img:hover {
   filter: grayscale(58%);
   position: relative;
-	box-shadow: 10px 10px 9px -1px  #3D2F2F;
 }
 .error-page{
   display: flex;
@@ -240,7 +242,6 @@ img.figure-img:hover {
 img.figure-img:focus {
   transform: scale(2) translate(25%, 25%);
   filter: none;
-  box-shadow: none;
 }
 @media (max-width: 600px) {
   img.figure-img:focus {
@@ -277,7 +278,6 @@ img.figure-img:focus {
 input, textarea {
   background-color:#FFFFFF;
 	position: relative;
-	box-shadow: 10px 10px 9px -1px  #3D2F2F;
 }
 textarea {	
   width: 300px;
@@ -414,6 +414,8 @@ a.nav-link:hover {
   scroll-snap-type: x mandatory;
 }
 
-
+form {
+  background-color: var(--background-color);
+}
 
 
