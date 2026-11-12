@@ -1,0 +1,1 @@
+Got a 95 orginally on the accessibility score. All I needed to do was make the brown contrast more with the background because it flagged the colors as too close together. To fix this, I ended up going into my styles, clicking on the color square and dragging the color selector down to create more contrast.
