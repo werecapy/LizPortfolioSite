@@ -16,10 +16,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Mogra&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Mogra&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="form-sheet.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/utilities.js" defer></script>
   </head>
   <body>
     <header>
       <a href="/index.html"><img src="Assets/logo.svg" alt="Liz Koempel Logo" class="logo"></a>
+      <button id="theme-toggle">☀️/🌑</button>
       <nav>
         <ul id="list" class="nav-list">
           <li id="page"><a class="nav-link glow-link" href="/index.html">Home</a></li>
@@ -29,7 +32,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="site">
       <h1>Contact Me</h1>
       <p class="fluff-content" id="contact">Leave a message at the beep!</p>
       <!---Sorry, I am NOT putting my school email on the internet for it to get scraped and more spam gets sent to it.-->
@@ -96,7 +99,7 @@
       </fieldset>
     </div>
     
-    <button type="submit" class="btn btn-primary float-right">
+    <button type="submit" class="send">
       <i class="fa fa-paper-plane"></i> 
       Send
     </button>
