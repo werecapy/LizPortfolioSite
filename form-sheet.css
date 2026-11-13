@@ -42,10 +42,17 @@ body {
   line-height: 1.5; 
   color: var(--primary-color);
   text-align: left;
-  background-color: #fae3c6;
+  background-color: var(--background-color);
 }
 [tabindex="-1"]:focus {
   outline: 0 !important;
+}
+body.dark-mode {
+  --background-color: #352f27;
+  --secondary-color: #3e60da;
+  --primary-color: #e7e5e4;
+  --highlight-color: #5d554c;
+
 }
 hr {
   box-sizing: content-box;
@@ -65,6 +72,13 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+figcaption.dark-mode {
+  --background-color: #352f27;
+  --secondary-color: #3e60da;
+  --primary-color: #e7e5e4;
+  --highlight-color: #5d554c;
+
 }
 abbr[data-original-title],
 abbr[title] {
@@ -406,6 +420,13 @@ mark {
 .figure-caption {
   font-size: 90%;
   color: #6c757d;
+}
+.figure-caption.dark-mode {
+  --background-color: #352f27;
+  --secondary-color: #3e60da;
+  --primary-color: #e7e5e4;
+  --highlight-color: #5d554c;
+
 }
 code {
   font-size: 87.5%;

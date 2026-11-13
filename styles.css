@@ -7,6 +7,7 @@
   --figure-caption-color: #0e4749;
   --mogra-font: "Mogra", system-ui;
   --gudea-regular: "Gudea", sans-serif;
+  --figure-caption-color: var(--primary-color);
 }
 /*The navigation’s header is set to position: fixed; top: 0, which takes it out of the normal page layout. The content doesn’t reserve space for its height, so <main> starts at the top and slides underneath the banner. The main rule has a horizontal margin but no top spacing. See styles.css:67 and styles.css:11.
 
@@ -452,4 +453,13 @@ button {
 button:hover {
   background-color: var(--highlight-color);
   color: var(--primary-color);
+}
+
+/*how do I make a dark mode?*/
+body.dark-mode {
+  --background-color: #352f27;
+  --secondary-color: #3e60da;
+  --primary-color: #e7e5e4;
+  --highlight-color: #5d554c;
+  --figure-caption-color: var(--primary-color);
 }
