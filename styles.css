@@ -350,18 +350,6 @@ a.glow-link:focus-visible::after {
 
 
 
-.faux-button {
-  border: 1px solid var(--primary-color);
-  padding: 1rem;
-  background-color: var(--secondary-color);
-  color: var(--background-color);
-  text-align: center;
-}
-
-.faux-button:hover {
-  background-color: var(--highlight-color);
-  color: #002626;
-}
 
 a.nav-link:hover {
   color: var(--highlight-color);
@@ -458,6 +446,7 @@ button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   cursor: pointer;
+  border: 1px solid var(--primary-color);
 }
 
 button:hover {

@@ -26,3 +26,5 @@ nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
 slider.addEventListener('scroll', updateCounter, { passive: true });
 
 counter.textContent = `1 / ${slides.length}`;
+
+
