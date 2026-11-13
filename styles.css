@@ -240,7 +240,7 @@ img.figure-img:hover {
 }
 
 img.figure-img:focus {
-  transform: scale(2) translate(25%, 25%);
+  transform: scale(2) /*translate(25%, 25%)*/;
   filter: none;
 }
 @media (max-width: 600px) {
@@ -378,20 +378,7 @@ a.nav-link:hover {
 * {
   box-sizing: border-box;
 }
-.personal_projects {
-  width: 80%;
-  height: 750px;
-  padding: 2px;
-  display: flex;
-  gap: 4vw;
-}
-.personal_projects_entry{
-  list-style-type: none;
-  background-color: var(--background-color);
 
-  padding: 20px;
-
-  flex: 0 0 100%;
 }
 /**AI - make a media query button that will be bigger when it is in mobile**/
 @media (min-width: 600px) {
@@ -409,13 +396,71 @@ a.nav-link:hover {
 }
 /**end of ai output**/
 
-.personal_projects {
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
 
 form {
   background-color: var(--background-color);
 }
 
+/* Ai output for the carousel for the about page - I will need to add the js file to make it work**/
+.personal_projects {
+  display: flex;
+  width: 100%;
+  max-width: 640px;
+  min-width: 0;
+  margin: 2rem auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
 
+.personal_projects::-webkit-scrollbar {
+  display: none;
+}
+
+.personal_projects_entry {
+  flex: 0 0 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  scroll-snap-align: start;
+}
+
+.personal_projects_entry figure {
+  margin: 0;
+}
+
+.personal_projects_entry .figure-img {
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.personal_projects_entry figcaption {
+  text-align: left;
+  line-height: 1.6;
+}
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--highlight-color);
+  color: var(--primary-color);
+}

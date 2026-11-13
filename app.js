@@ -1,22 +1,28 @@
-import SwipeSlider from 'pure-swipe-slider';
-import 'pure-swipe-slider/swipe-slider.css';
 
-// Register with custom tag name
-customElements.define('my-slider', SwipeSlider);
+/* It is still not acting like a carousel*/
+const slider = document.querySelector('.personal_projects');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const counter = document.getElementById('slide-counter');
+const slides = [...slider.querySelectorAll('.personal_projects_entry')];
+let currentSlide = 0;
 
+function updateCounter() {
+  currentSlide = Math.round(slider.scrollLeft / slider.clientWidth);
+  counter.textContent = `${currentSlide + 1} / ${slides.length}`;
+}
 
-document.querySelector('#wshc_head').onclick = () => {
-  document.querySelector('#wshc').scrollIntoView({ behavior: 'smooth' });
-};
+function showSlide(index) {
+  currentSlide = (index + slides.length) % slides.length;
+  slider.scrollTo({
+    left: currentSlide * slider.clientWidth,
+    behavior: 'smooth',
+  });
+  counter.textContent = `${currentSlide + 1} / ${slides.length}`;
+}
 
-document.querySelector('#ric_head').onclick = () => {
-  document.querySelector('#ric').scrollIntoView({ behavior: 'smooth' });
-};
+prevBtn.addEventListener('click', () => showSlide(currentSlide - 1));
+nextBtn.addEventListener('click', () => showSlide(currentSlide + 1));
+slider.addEventListener('scroll', updateCounter, { passive: true });
 
-document.querySelector('#lansing_head').onclick = () => {
-  document.querySelector('#lansing').scrollIntoView({ behavior: 'smooth' });
-};
-
-document.querySelector('#hardy_head').onclick = () => {
-  document.querySelector('#hardy').scrollIntoView({ behavior: 'smooth' });
-};
+counter.textContent = `1 / ${slides.length}`;
