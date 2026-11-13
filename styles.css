@@ -463,3 +463,13 @@ body.dark-mode {
   --highlight-color: #5d554c;
   --figure-caption-color: var(--primary-color);
 }
+
+.theme-toggle {
+  display: flex;
+  align-items: right;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
